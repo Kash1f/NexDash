@@ -1,7 +1,10 @@
-function App() {
+import Home from "./pages/Home/Home"
 
+const App = () => {
   return (
-    <div>Hello World</div>
+    <div>
+      <Home/>
+    </div>
   )
 }
 
