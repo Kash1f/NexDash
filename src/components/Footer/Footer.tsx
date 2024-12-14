@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>@2023 Copyright</div>
   )
 }
 
