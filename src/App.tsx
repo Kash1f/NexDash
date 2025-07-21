@@ -1,5 +1,9 @@
 import Home from "./pages/Home/Home";
-import { createBrowserRouter, RouterProvider, Outlet, BrowserRouter } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
 import Users from "./pages/Users/Users";
 import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
@@ -33,46 +37,44 @@ function App() {
     );
   };
 
-  const router = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <Layout />,
-        children: [
-          {
-            path: "",
-            element: <Home />,
-          },
-          {
-            path: "users",
-            element: <Users />,
-          },
-          {
-            path: "products",
-            element: <Products />,
-          },
-          {
-            path: "users/:id",
-            element: <User />,
-          },
-          {
-            path: "products/:id",
-            element: <Product />,
-          },
-        ],
-      },
-      {
-        path: "login",
-        element: <Login />,
-      },
-    ],
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+        },
+        {
+          path: "users",
+          element: <Users />,
+        },
+        {
+          path: "products",
+          element: <Products />,
+        },
+        {
+          path: "users/:id",
+          element: <User />,
+        },
+        {
+          path: "products/:id",
+          element: <Product />,
+        },
+      ],
+    },
+    {
+      path: "login",
+      element: <Login />,
+    },
+  ],
+   {
+    basename: "/NexDash",
+  }
+);
 
-  return (
-    <BrowserRouter basename="/NexDash">
-      <RouterProvider router={router} />
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
