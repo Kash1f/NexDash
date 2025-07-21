@@ -1,8 +1,11 @@
-
+import "./footer.scss"
 
 const Footer = () => {
   return (
-    <div>@2023 Copyright</div>
+    <div className="footer">
+      <span>NexDash</span>
+      <span>© Nex Dashboard</span>
+    </div>
   )
 }
 
