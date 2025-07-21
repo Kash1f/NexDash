@@ -1,5 +1,5 @@
 import Home from "./pages/Home/Home";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet, BrowserRouter } from "react-router-dom";
 import Users from "./pages/Users/Users";
 import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
@@ -66,12 +66,13 @@ function App() {
         element: <Login />,
       },
     ],
-    {
-      basename: "/NexDash",
-    }
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <BrowserRouter basename="/NexDash">
+      <RouterProvider router={router} />
+    </BrowserRouter>
+  );
 }
 
 export default App;
