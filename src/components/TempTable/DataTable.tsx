@@ -78,6 +78,7 @@ const DataTable = (props: Props) => {
         disableColumnFilter
         disableDensitySelector
         disableColumnSelector
+        
       />
     </div>
   );
