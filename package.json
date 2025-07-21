@@ -2,7 +2,7 @@
   "name": "starter",
   "private": true,
   "version": "0.0.0",
-    "homepage": "https://Kash1f7.github.io/react-admin-dashboard",
+    "homepage": "https://Kash1f.github.io/react-admin-dashboard",
   "type": "module",
  "scripts": {
   "dev": "vite",
