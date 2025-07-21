@@ -11,7 +11,7 @@ import {
   chartBoxRevenue,
   chartBoxUser,
 } from "../../data";
-import "./home.scss";
+import "./Home.scss";
 
 const Home = () => {
   return (
